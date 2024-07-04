@@ -176,7 +176,7 @@ extra_css: # 额外 CSS
   - extra/css/extra.css # 加载自定义的样式
   - https://cdn.bootcss.com/font-awesome/4.3.0/css/font-awesome.min.css # 访问统计转圈加载样式
   - https://cdn.jsdelivr.net/npm/lxgw-wenkai-screen-webfont@1.1.0/style.css # 自定义文本字体（霞鹜文楷）
-
+  - extra/css/other.css
 
 plugins: # 插件
   - git-revision-date-localized: # 文章日期显示插件（pip install mkdocs-git-revision-date-localized-plugin）注意：build 时此插件加载非常缓慢！
@@ -219,8 +219,8 @@ plugins: # 插件
 nav: # 导航栏
   - 主页: 
     - index.md
+    - 朋友们！: Friends.md
     - 评论区: Suggest.md
-  - 课程笔记: 
-    - 六经通论: 课程笔记/期末复习整理.md
+    
 
       
