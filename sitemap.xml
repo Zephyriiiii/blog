@@ -2,17 +2,22 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://zephyriiiii.github.io/blog/</loc>
-         <lastmod>2024-07-04</lastmod>
+         <lastmod>2024-07-06</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://zephyriiiii.github.io/blog/Friends/</loc>
+         <lastmod>2024-07-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://zephyriiiii.github.io/blog/Suggest/</loc>
-         <lastmod>2024-07-04</lastmod>
+         <lastmod>2024-07-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://zephyriiiii.github.io/blog/%E8%AF%BE%E7%A8%8B%E7%AC%94%E8%AE%B0/%E6%9C%9F%E6%9C%AB%E5%A4%8D%E4%B9%A0%E6%95%B4%E7%90%86/</loc>
-         <lastmod>2024-07-04</lastmod>
+         <lastmod>2024-07-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
 </urlset>
