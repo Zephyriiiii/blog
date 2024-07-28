@@ -23,5 +23,14 @@
         </a>
     </div>
 
+    <div class="flink-list-item">
+        <div class="flink-item-icon">
+            ![Alt text](Friends/yrjj.jpg)
+        </div>
+        <a href="https://tsuki0512.github.io/" title="wyr's notes" target="_blank">
+            <div class="flink-item-name">wyr's notes</div>
+            <div class="flink-item-desc">yrjj！</div>
+        </a>
+    </div>
 
 ??? summary " 我的好朋友们！"
