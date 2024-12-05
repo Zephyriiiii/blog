@@ -34,3 +34,23 @@
     </div>
 
 ??? summary " 我的好朋友们！"
+
+    <div class="flink-list-item">
+        <div class="flink-item-icon">
+            ![Alt text](Friends/yx.jpg)
+        </div>
+        <a href="https://gyx47.github.io" title="gyx's blog" target="_blank">
+            <div class="flink-item-name">gyx's blog</div>
+            <div class="flink-item-desc">yx~</div>
+        </a>
+    </div>
+
+    <div class="flink-list-item">
+        <div class="flink-item-icon">
+            ![Alt text](Friends/zzw.png)
+        </div>
+        <a href="https://zzw4257.cn" title="zzw4257" target="_blank">
+            <div class="flink-item-name">zzw4257</div>
+            <div class="flink-item-desc">zwgg！</div>
+        </a>
+    </div>

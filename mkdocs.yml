@@ -6,6 +6,33 @@ site_description: Welcome to Zephyr2023's NoteBook!
 site_author: Zephyr2023
 copyright: Copyright &copy; 2024 Zephyr2023
 
+nav: # 导航栏
+  - 主页: 
+    - index.md
+    - 朋友们！: Friends.md
+    # - 评论区: Suggest.md
+  - 课程笔记:
+    - 数据安全与密码学基础: 
+      - Lec1 Introduction: 课程笔记/数据安全与密码学基础/Lec1.md
+      - Lec2 Perfect Privacy: 课程笔记/数据安全与密码学基础/Lec2.md
+      - Lec3 Computational Security: 课程笔记/数据安全与密码学基础/Lec3.md
+      - Lec4 EAV-Security: 课程笔记/数据安全与密码学基础/Lec4.md
+      - Lec5 Multi-Message Security: 课程笔记/数据安全与密码学基础/Lec5.md
+      - Lec6 CPA-Security: 课程笔记/数据安全与密码学基础/Lec6.md
+      - Lec7 PRG PRFs PRP & MAC: 课程笔记/数据安全与密码学基础/Lec7.md
+      - Lec8 MidTerm Exam: 课程笔记/数据安全与密码学基础/Lec8.md
+      - Lec9 Constucting MAC: 课程笔记/数据安全与密码学基础/Lec9.md
+      - Lec10 CCA & AE Security: 课程笔记/数据安全与密码学基础/Lec10.md
+      - Lec11 Hash Function: 课程笔记/数据安全与密码学基础/Lec11.md
+      - Lec12 Hard Assumptions: 课程笔记/数据安全与密码学基础/Lec12.md
+  - 课外阅读: 
+    - 网络是怎样连接的: 
+      - Chapter3 从网线到网络设备: 课外阅读/网络是怎样连接的/Chapter3.md
+      - Chapter4 通过接入网进入互联网内部: 课外阅读/网络是怎样连接的/Chapter4.md
+      - Chapter5 服务器端的局域网: 课外阅读/网络是怎样连接的/Chapter5.md
+      - Chapter6 Web服务器响应请求: 课外阅读/网络是怎样连接的/Chapter6.md
+
+
 markdown_extensions:
   # === 从这里开始到下面，是 pymdown-extensions 库的 markdown_extensions 配置 ===
  
@@ -14,41 +41,42 @@ markdown_extensions:
   - pymdownx.caret # 允许文本高亮，即 ==Text==
   - pymdownx.tilde # 允许文本删除线，即 ~~Text~~
   - pymdownx.details # 允许提示框与文本左右布局，而非原来的上下布局，如 !!! note inline "Hint"（左），!!! note inline end（右）
+  - pymdownx.superfences
   - pymdownx.snippets # 允许外联任何内容
-  - pymdownx.striphtml # 去除 HTML 中不需要的注释和 / 或标记属性，可减小 HTML 大小
-  - pymdownx.smartsymbols # 允许上下标，如 x^2^（x²）
-  - pymdownx.inlinehilite # 支持行内代码块高亮，如 `#!python range()`
-  - pymdownx.smartsymbols # 智能符号，如 (c) 就是 ©️
+  # - pymdownx.striphtml # 去除 HTML 中不需要的注释和 / 或标记属性，可减小 HTML 大小
+  # - pymdownx.smartsymbols # 允许上下标，如 x^2^（x²）
+  # - pymdownx.inlinehilite # 支持行内代码块高亮，如 `#!python range()`
+  # - pymdownx.smartsymbols # 智能符号，如 (c) 就是 ©️
  
-  - pymdownx.b64 # 允许使用 base64 编码嵌入本地 PNG、JPEG 和 GIF 图像引用（pymdownx 支持，mkdocs 暂时不支持）
-  - pymdownx.escapeall # 允许使用反斜杠（pymdownx 支持，mkdocs 貌似部分支持，不完全支持）
-  - pymdownx.magiclink # 自动识别超链接（pymdownx 支持，mkdocs 暂时不支持）
-  - pymdownx.progressbar # 允许进度条语法（pymdownx 支持，mkdocs 暂时不支持）
-  - pymdownx.saneheaders # “#title” 也是标题，虽然中间没有空格（pymdownx 支持，mkdocs 暂时不支持）
+  # - pymdownx.b64 # 允许使用 base64 编码嵌入本地 PNG、JPEG 和 GIF 图像引用（pymdownx 支持，mkdocs 暂时不支持）
+  # - pymdownx.escapeall # 允许使用反斜杠（pymdownx 支持，mkdocs 貌似部分支持，不完全支持）
+  # - pymdownx.magiclink # 自动识别超链接（pymdownx 支持，mkdocs 暂时不支持）
+  # - pymdownx.progressbar # 允许进度条语法（pymdownx 支持，mkdocs 暂时不支持）
+  # - pymdownx.saneheaders # “#title” 也是标题，虽然中间没有空格（pymdownx 支持，mkdocs 暂时不支持）
  
-  - pymdownx.blocks.tab # 支持更高级的标签块写法（危：可能与 pymdownx.tabbed 冲突）
+  # - pymdownx.blocks.tab # 支持更高级的标签块写法（危：可能与 pymdownx.tabbed 冲突）
   - pymdownx.blocks.html # 支持一些更高级的 md 内嵌 HTML 语法（pymdownx.blocks 默认开启）
-  - pymdownx.blocks.details # 支持更高级的提示框布局（危：可能与 pymdownx.details 冲突）
-  - pymdownx.blocks.admonition # 支持更高级提示框语法（危：可能与 admonition 冲突）
-  - pymdownx.blocks.definition # 支持更高级的定义块语法（危：可能与 def_list）
+  # - pymdownx.blocks.details # 支持更高级的提示框布局（危：可能与 pymdownx.details 冲突）
+  #- admonition # 支持更高级提示框语法（危：可能与 admonition 冲突）
+  # - pymdownx.blocks.definition # 支持更高级的定义块语法（危：可能与 def_list）
  
   - pymdownx.arithmatex: # 允许数学表达式，即 $$y=x+1$$，或行内的 $x=1$
       generic: true
  
-  - pymdownx.betterem: # 允许斜体和加粗
-      smart_enable: all
+  # - pymdownx.betterem: # 允许斜体和加粗
+  #     smart_enable: all
  
-  - pymdownx.critic: # 允许批注，批注详情见 https://mkdoc-material.llango.com/reference/formatting/
-      mode: view # 批注模式，可为 view，accept 和 reject，不懂干啥的
+  # - pymdownx.critic: # 允许批注，批注详情见 https://mkdoc-material.llango.com/reference/formatting/
+  #     mode: view # 批注模式，可为 view，accept 和 reject，不懂干啥的
  
-  - pymdownx.highlight: # 允许代码块语法高亮
-      use_pygments: true # 使用 pygments 而不是 javascript，啥意思不懂
-      linenums: true # 全部显示行号，若为 false，也可指定起始行号，如 ```python linenums="2"，也可指定高亮行，如 hl_lines="2-3"
-      linenums_style: pymdownx-inline # 行号样式 pymdownx-inline 或者 inline 和 table（最好不要使用其它的值，会有 bug，如代码复制按钮错位）
-      anchor_linenums: true # 用锚链接包装代码行号，便于超链接和共享（就是行号可以像锚点一样被点击）
-      line_spans: __span # 这对于行突出显示等功能正常工作至关重要，不懂
-      pygments_lang_class: true # 对于自定义注释标记的功能至关重要，不懂
-      # auto_title: true # 自动为所有代码块添加一个标题
+  # - pymdownx.highlight: # 允许代码块语法高亮
+  #     use_pygments: true # 使用 pygments 而不是 javascript，啥意思不懂
+  #     linenums: true # 全部显示行号，若为 false，也可指定起始行号，如 ```python linenums="2"，也可指定高亮行，如 hl_lines="2-3"
+  #     linenums_style: pymdownx-inline # 行号样式 pymdownx-inline 或者 inline 和 table（最好不要使用其它的值，会有 bug，如代码复制按钮错位）
+  #     anchor_linenums: true # 用锚链接包装代码行号，便于超链接和共享（就是行号可以像锚点一样被点击）
+  #     line_spans: __span # 这对于行突出显示等功能正常工作至关重要，不懂
+  #     pygments_lang_class: true # 对于自定义注释标记的功能至关重要，不懂
+  #     # auto_title: true # 自动为所有代码块添加一个标题
  
   - pymdownx.emoji: # 允许 Emoji 表情
       emoji_index: !!python/name:material.extensions.emoji.twemoji
@@ -85,22 +113,22 @@ markdown_extensions:
   - admonition # 允许各种各样的提示框，或代码框，样式见 https://mkdoc-material.llango.com/reference/admonitions/
   - md_in_html # 允许 md 内嵌在 HTML 中
   - sane_lists # 理智列表，避免旧版 md 抽风（强烈推荐开启）
-  # - nl2br # 换行符硬断裂，即文本不像旧版 md 那样，可以直接换行
+  #- nl2br # 换行符硬断裂，即文本不像旧版 md 那样，可以直接换行  别开，开了友链图片会爆
   # - codehilite # 被 pymdownx 相关扩展取代了，不建议使用这个
   # - fenced_code # 被 pymdownx 相关扩展取代了，不建议使用这个
  
-  - footnotes: # 允许脚注
-      BACKLINK_TITLE: 返回脚注 {} # 底部脚注的提示词，建议改一下，默认是英文的
+  # - footnotes: # 允许脚注
+  #     BACKLINK_TITLE: 返回脚注 {} # 底部脚注的提示词，建议改一下，默认是英文的
       # SUPERSCRIPT_TEXT: {} # 脚注名称，默认就是 {}，表示标号
  
   - toc: # 目录设置
       title: 目录 # 在右侧导航侧边栏中设置目录的标题
       permalink_title: 点击定位到锚点 # 设置锚点链接的提示词
       permalink: "#" # 启用目录锚点，并设置符号为 “#”
-      slugify:
-        !!python/object/apply:pymdownx.slugs.slugify # 这啥玩意儿，不懂，抄官网的
-        kwds:
-          case: lower
+      # slugify:
+      #   !!python/object/apply:pymdownx.slugs.slugify # 这啥玩意儿，不懂，抄官网的
+      #   kwds:
+      #     case: lower
 
 theme: # 主题设置
   name: material # 第三方主题名称
@@ -119,8 +147,8 @@ theme: # 主题设置
     - navigation.tabs # 页面顶部导航栏
     - navigation.footer # 页面底下换页的支持
     - navigation.indexes # 左侧边栏大节点是否可以被导向到 index.md
-    - navigation.instant # 页面不会重复加载（已加载页面不会再次加载）
-    - navigation.instant.progress # 加载速度慢时，在页面顶部显示加载进度（400ms 以上加载时间才会显示它）
+    # - navigation.instant # 页面不会重复加载（已加载页面不会再次加载）
+    # - navigation.instant.progress # 加载速度慢时，在页面顶部显示加载进度（400ms 以上加载时间才会显示它）
     # - navigation.tabs.sticky # 导航栏标题栏位置固定
     # - navigation.sections # 左侧边栏节点是否保持展开
     - navigation.top # 回到顶部的按钮
@@ -172,6 +200,13 @@ extra: # 额外设定
 
 extra_javascript: # 额外 JS
   - extra/js/shortcuts.js # 绑定左右键换页的键盘快捷键
+  - https://polyfill.io/v3/polyfill.min.js?features=es6
+  # - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js
+  # - javascripts/katex.js
+  # - https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/katex.min.js
+  # - https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/contrib/auto-render.mi
+  - javascripts/mathjax.js
+  - https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js
 extra_css: # 额外 CSS
   - extra/css/extra.css # 加载自定义的样式
   - https://cdn.bootcss.com/font-awesome/4.3.0/css/font-awesome.min.css # 访问统计转圈加载样式
@@ -179,18 +214,18 @@ extra_css: # 额外 CSS
   - extra/css/other.css
 
 plugins: # 插件
-  - git-revision-date-localized: # 文章日期显示插件（pip install mkdocs-git-revision-date-localized-plugin）注意：build 时此插件加载非常缓慢！
-      enable_creation_date: true # 显示创建的日期
-      type: datetime # 每页底下显示最后更新日期，类型是 datatime（日期+时间），或者 data（只有日期）等
-      locale: zh # 换成中文显示
-  - git-authors: # 文章作者显示插件（pip install mkdocs-git-authors-plugin）注意：build 时此插件加载非常缓慢！
-      show_contribution: true # 显示贡献比例
-      show_line_count: true # 记录行数
-      show_email_address: true # 显示邮箱
-      count_empty_lines: false # 记录空行的贡献
-      fallback_to_empty: false # 不懂
-      sort_authors_by: contribution # 贡献者名单排序方式 (name, contribution)
-      authorship_threshold_percent: 0 # 筛选掉贡献比例低于该百分比的贡献者
+  # - git-revision-date-localized: # 文章日期显示插件（pip install mkdocs-git-revision-date-localized-plugin）注意：build 时此插件加载非常缓慢！
+  #     enable_creation_date: true # 显示创建的日期
+  #     type: datetime # 每页底下显示最后更新日期，类型是 datatime（日期+时间），或者 data（只有日期）等
+  #     locale: zh # 换成中文显示
+  # - git-authors: # 文章作者显示插件（pip install mkdocs-git-authors-plugin）注意：build 时此插件加载非常缓慢！
+  #     show_contribution: true # 显示贡献比例
+  #     show_line_count: true # 记录行数
+  #     show_email_address: true # 显示邮箱
+  #     count_empty_lines: false # 记录空行的贡献
+  #     fallback_to_empty: false # 不懂
+  #     sort_authors_by: contribution # 贡献者名单排序方式 (name, contribution)
+  #     authorship_threshold_percent: 0 # 筛选掉贡献比例低于该百分比的贡献者
   - glightbox: # 图像缩放插件（pip install mkdocs-glightbox）
       touchNavigation: true # 启用或禁用触摸导航（轻扫），应该是便于手机用户吧
       loop: false # 换图时循环
@@ -215,12 +250,5 @@ plugins: # 插件
       htmlmin_opts:
         remove_comments: true
       cache_safe: true
-
-nav: # 导航栏
-  - 主页: 
-    - index.md
-    - 朋友们！: Friends.md
-    - 评论区: Suggest.md
-    
 
       
