@@ -25,6 +25,8 @@ nav: # 导航栏
       - Lec10 CCA & AE Security: 课程笔记/数据安全与密码学基础/Lec10.md
       - Lec11 Hash Function: 课程笔记/数据安全与密码学基础/Lec11.md
       - Lec12 Hard Assumptions: 课程笔记/数据安全与密码学基础/Lec12.md
+      - Lec13 Key-Exchange: 课程笔记/数据安全与密码学基础/Lec13.md
+      - Lec14 Public-Key Encryption: 课程笔记/数据安全与密码学基础/Lec14.md
   - 课外阅读: 
     - 网络是怎样连接的: 
       - Chapter3 从网线到网络设备: 课外阅读/网络是怎样连接的/Chapter3.md
