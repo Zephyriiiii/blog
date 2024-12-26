@@ -153,7 +153,7 @@ $$
 
 ### Distribution of Random Oracle
 
-下面重点考虑Random Oracle 的分布。我们定义： **A Random Oracle is a function maps $\{0,1\}^*\rightarrow \{0,1\}^n$ **
+下面重点考虑Random Oracle 的分布。我们定义： **A Random Oracle is a function maps $\{0,1\}^*\rightarrow \{0,1\}^n$**
 
 > 教材中的输出也是任意长字符串，但是老师认为这样是难以解释的，故他采用$n$比特长字符串定义和说明
 
@@ -197,6 +197,8 @@ $$
 ### Definitions and Proofs in the Random-Oracle Model
 
 在实际运用中，random oracle一般用来构造一些方案，在使用证明这些方案的安全性时的归约中，我们令归约伪造一个$\hat{H}$，让它来模拟$H$的行为。因为方案的构造是基于random oracle的，那么在归约中Adv不可避免地需要和其交互。在我们的归约方法中，我们把Adv和$H$的交互强行换绑为和$\hat{H}$的交互，这样归约R就可以获取一些Adv的输入并且能够控制返回的输出。在high level的角度上，这种方法相当于 ”给了归约一把武器，并且捆绑住了Adv的手脚“，让归约证明变得可行。
+
+![1734596793572](./Lec14.assets/1734596793572.png)
 
 在 random oracle model 实际运用在证明中时，需要注意它有三条比较好的性质：
 
