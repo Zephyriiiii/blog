@@ -3,13 +3,13 @@
 !!! info "Absract"
 
     在第三讲中，已经完成了前置知识的介绍，这一讲将集中于我们的主要目标
-
+    
     **Goal**: How To Design a Secure Cryptosystem with Shorter Secret Key.
-
+    
     逻辑上，会先构建单消息加密下的模型EAV-secure(引入PRG);随后讨论更强的多消息加密模型CPA-secure(引入PRP/PRFs).
-
+    
     其中，单消息加密的构造也被称作流密码，多消息加密的构造也被称作分组密码,本节讲流密码
-
+    
     Key Words: EAV-Secure;pseudo-random; PRG; Stream Cipher; 
 
 
@@ -53,7 +53,7 @@ From Theoretical Perspection:
 1. The running time of adv.
 2. The size of "string".
 
-### Defnition: (Pseudo-Random Generator)[PRG]
+### Definition: (Pseudo-Random Generator)[PRG]
 
 Let $\{G_n\}_n$ be a function that maps $\{0,1\}^n \rightarrow \{0,1\}^{l(n)}$
 
@@ -73,6 +73,16 @@ we say $G$ is a PRG if
 >其中，$r$是从$\{0,1\}^{l(n)}$中均匀随机选择的，种子$s$是从$\{0,1\}^n$中均匀随机选择的，并且概率来源为$D$的随机性和对$r,s$的选择
 >
 >$l(\cdot)$也称为$G$的扩展系数
+
+**Definition in the book**
+
+![image-20250105153941310](./Lec4.assets/image-20250105153941310.png)
+
+??? note "An Example of PRG"
+
+    ![image-20250105154019248](./Lec4.assets/image-20250105154019248.png)
+
+
 
 ### Further Discussion of Pseudo-Random
 
@@ -147,8 +157,7 @@ By contriposition:
 $$
 \begin{align}
 Pr[AwinsEAV]&=\frac{1}{2}+\Delta \\
-Pr[R^A winsPR]&=\frac{1}{2}+NonSmall \\
-Pr[R^Awins]&=P[b=0]\cdot Pr[R^Awins \mid b=0]+P[b=1]\cdot Pr[R^Awins \mid b=1]\\
+Pr[R^AwinsPRG]&=P[b=0]\cdot Pr[R^Awins \mid b=0]+P[b=1]\cdot Pr[R^Awins \mid b=1]\\
 &=\frac{1}{2}Pr[R^Awins \mid b=0]+\frac{1}{2}\cdot \frac{1}{2}\\
 &=\frac{1}{2}Pr[AwinsEAV]+\frac{1}{2}\cdot \frac{1}{2}\\
 &=\frac{1}{2}\cdot (\frac{1}{2}+\Delta)+\frac{1}{4}\\
@@ -177,9 +186,9 @@ $Dec(sk,c)\rightarrow G(sk)\oplus c$
 !!! note "流密码操作模式"
 
     流密码的操作模式分为 **同步** 和 **异步**，仅作了解即可.流密码可以用PRG构造（即本节内容）也可以用PRF构造（不做要求）
-
+    
     形式化的定义为：
-
+    
     ![1730949933576](./Lec4.assets/1730949933576.png)
 
 ### Longer N

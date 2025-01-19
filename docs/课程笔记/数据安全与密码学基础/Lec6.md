@@ -3,17 +3,17 @@
 !!! info "Absract"
 
     本讲中，延续上讲讲过的PRFs，对Multi-msg Secure进行讨论，同时介绍了一种重要的攻击：选择明文攻击（IND-CPA）。
-
+    
     **Goal**: Build a cryptosystem that yields Multi-Msg Secure.
-
+    
     本讲的核心逻辑是：
-
+    
     1. 证明CPA的变种CPA2(强于CPA) $\Rightarrow$ Multi-Msg Secure.
     2. 证明CPA $\Rightarrow$ CPA2.
     3. 用PRFs构造CPA.
-
+    
     通过这条逻辑链，我们就实现了用PRFs yields Multi-Msg Secure.
-
+    
     Key words: Multi-Msg Secure; IND-CPA; PRFs
 
 ## IND-CPA(选择明文攻击)
@@ -152,7 +152,9 @@ $Dec(sk,c_1,c_2):=c_2 \oplus F_{sk}(c_1)$
 
 > 其中,r是纯随机的，根据PRFs的性质,$F_{sk}(r)$是满足伪随机的
 
+??? note "Example of PRFs"
 
+    ![image-20250105165943967](./Lec6.assets/image-20250105165943967.png)
 
 ### The security of PRFs
 
