@@ -37,6 +37,11 @@ nav: # 导航栏
       - Chapter4 通过接入网进入互联网内部: 课外阅读/网络是怎样连接的/Chapter4.md
       - Chapter5 服务器端的局域网: 课外阅读/网络是怎样连接的/Chapter5.md
       - Chapter6 Web服务器响应请求: 课外阅读/网络是怎样连接的/Chapter6.md
+    - 程序员的自我修养:
+      - 第一部分 简介:
+        - Chapter1 简介: 课外阅读/程序员的自我修养/Chapter1.md
+      - 第二部分 静态链接:
+        - Chapter2 编译和链接: 课外阅读/程序员的自我修养/Chapter2.md
 
 
 markdown_extensions:
