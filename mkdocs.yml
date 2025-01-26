@@ -42,7 +42,18 @@ nav: # 导航栏
         - Chapter1 简介: 课外阅读/程序员的自我修养/Chapter1.md
       - 第二部分 静态链接:
         - Chapter2 编译和链接: 课外阅读/程序员的自我修养/Chapter2.md
-
+        - Chapter3 目标文件里有什么: 课外阅读/程序员的自我修养/Chapter3.md
+        # - Chapter4 静态链接: 课外阅读/程序员的自我修养/Chapter4.md
+        # - Chapter5 Windows PE/COFF: 课外阅读/程序员的自我修养/Chapter5.md
+        # - Chapter6 可执行文件的装载与进程: 课外阅读/程序员的自我修养/Chapter6.md
+      # - 第三部分 动态链接:
+        # - Chapter7 动态链接: 课外阅读/程序员的自我修养/Chapter7.md
+        # - Chapter8 Linux共享库的组织: 课外阅读/程序员的自我修养/Chapter8.md
+        # - Chapter9 Windows下的动态链接: 课外阅读/程序员的自我修养/Chapter9.md
+      # - 第四部分 库与运行库:
+        # - Chapter10 内存: 课外阅读/程序员的自我修养/Chapter10.md
+        # - Chapter11 运行库: 课外阅读/程序员的自我修养/Chapter11.md
+        # - Chapter12 系统调用与API: 课外阅读/程序员的自我修养/Chapter12.md
 
 markdown_extensions:
   # === 从这里开始到下面，是 pymdown-extensions 库的 markdown_extensions 配置 ===
@@ -63,7 +74,7 @@ markdown_extensions:
   # - pymdownx.escapeall # 允许使用反斜杠（pymdownx 支持，mkdocs 貌似部分支持，不完全支持）
   # - pymdownx.magiclink # 自动识别超链接（pymdownx 支持，mkdocs 暂时不支持）
   # - pymdownx.progressbar # 允许进度条语法（pymdownx 支持，mkdocs 暂时不支持）
-  # - pymdownx.saneheaders # “#title” 也是标题，虽然中间没有空格（pymdownx 支持，mkdocs 暂时不支持）
+  # - pymdownx.saneheaders # "title" 也是标题，虽然中间没有空格（pymdownx 支持，mkdocs 暂时不支持）
  
   # - pymdownx.blocks.tab # 支持更高级的标签块写法（危：可能与 pymdownx.tabbed 冲突）
   - pymdownx.blocks.html # 支持一些更高级的 md 内嵌 HTML 语法（pymdownx.blocks 默认开启）
@@ -118,7 +129,7 @@ markdown_extensions:
   - abbr # 允许文本悬浮提示，就是 ToolTip，例如：*[Text]: 啊吧啊吧
   - tables # 允许用简单语法创建表格
   - smarty # 貌似是为了提高兼容性的，不太清楚
-  - def_list # 允许“定义列表”的语法，详细见 https://mkdoc-material.llango.com/reference/lists/
+  - def_list # 允许"定义列表"的语法，详细见 https://mkdoc-material.llango.com/reference/lists/
   - attr_list # 允许给 md 元素增加 HTML 和 CSS 属性，如一个按钮 [Subscribe to our mailing list](#){: .md-button }，甚至图标，详细见 https://mkdoc-material.llango.com/reference/buttons/
   - wikilinks # 支持快捷链接语法，例如 [[a link]]，会变成 ./a_link/
   - admonition # 允许各种各样的提示框，或代码框，样式见 https://mkdoc-material.llango.com/reference/admonitions/
@@ -135,7 +146,7 @@ markdown_extensions:
   - toc: # 目录设置
       title: 目录 # 在右侧导航侧边栏中设置目录的标题
       permalink_title: 点击定位到锚点 # 设置锚点链接的提示词
-      permalink: "#" # 启用目录锚点，并设置符号为 “#”
+      permalink: "#" # 启用目录锚点，并设置符号为 "#"
       # slugify:
       #   !!python/object/apply:pymdownx.slugs.slugify # 这啥玩意儿，不懂，抄官网的
       #   kwds:
