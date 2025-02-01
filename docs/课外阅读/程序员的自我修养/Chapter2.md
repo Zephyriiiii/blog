@@ -4,7 +4,7 @@
 
 以helloworld为例，在linux命令行中执行：
 
-```
+```bash
 gcc hello.c
 ./a.out
 ```
@@ -17,8 +17,8 @@ gcc hello.c
 
 用gcc进行预编译的命令是：
 
-```
-gcc -E hello.c -o hello.i
+```bash
+$ gcc -E hello.c -o hello.i
 ```
 
 从中也可以看出经过预编译后的文件扩展名是`.i`。
@@ -38,20 +38,20 @@ gcc -E hello.c -o hello.i
 
 编译就是把预处理完的文件进行一系列词法分析/语法分析/语义分析及优化后生成相应的汇编代码文件。下一节会简单介绍。编译过程对应的gcc命令为：
 
-```
-gcc -S hello.i -o hello.s
+```bash
+$ gcc -S hello.i -o hello.s
 ```
 
 现版本的gcc把预编译和编译合并，用cc1的程序来完成，故也可以使用：
 
-```
-cc1 hello.c
+```bash
+$ cc1 hello.c
 ```
 
 或
 
-```
-gcc -S hello.c -o hello.s
+```bash
+$ gcc -S hello.c -o hello.s
 ```
 
 **实际上gcc这个命令只是一些程序的包装，它会根据不同的参数去调用预编译编译程序cc1/汇编器as/链接器ld。**
@@ -60,15 +60,15 @@ gcc -S hello.c -o hello.s
 
 汇编器是把汇编代码变成机器码的过程，一一对应。可以用as汇编器或者gcc来完成：
 
-```
-as hello.S -o hello.o
-gcc -c hello.s -o hello.o
+```bash
+$ as hello.S -o hello.o
+$ gcc -c hello.s -o hello.o
 ```
 
 或
 
-```
-gcc -C hello.c -o hello.o
+```bash
+$ gcc -C hello.c -o hello.o
 ```
 
 ### 链接
@@ -89,7 +89,7 @@ gcc -C hello.c -o hello.o
 
 举例分析各个过程，样例代码为
 
-```
+```c
 array[index] = (index + 4) * (2 + 6)
 ```
 

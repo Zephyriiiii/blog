@@ -43,7 +43,7 @@ nav: # 导航栏
       - 第二部分 静态链接:
         - Chapter2 编译和链接: 课外阅读/程序员的自我修养/Chapter2.md
         - Chapter3 目标文件里有什么: 课外阅读/程序员的自我修养/Chapter3.md
-        # - Chapter4 静态链接: 课外阅读/程序员的自我修养/Chapter4.md
+        - Chapter4 静态链接: 课外阅读/程序员的自我修养/Chapter4.md
         # - Chapter5 Windows PE/COFF: 课外阅读/程序员的自我修养/Chapter5.md
         # - Chapter6 可执行文件的装载与进程: 课外阅读/程序员的自我修养/Chapter6.md
       # - 第三部分 动态链接:
