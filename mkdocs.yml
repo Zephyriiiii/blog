@@ -44,9 +44,9 @@ nav: # 导航栏
         - Chapter2 编译和链接: 课外阅读/程序员的自我修养/Chapter2.md
         - Chapter3 目标文件里有什么: 课外阅读/程序员的自我修养/Chapter3.md
         - Chapter4 静态链接: 课外阅读/程序员的自我修养/Chapter4.md
-        # - Chapter5 Windows PE/COFF: 课外阅读/程序员的自我修养/Chapter5.md
-        # - Chapter6 可执行文件的装载与进程: 课外阅读/程序员的自我修养/Chapter6.md
-      # - 第三部分 动态链接:
+        - Chapter5 Windows PE/COFF: 课外阅读/程序员的自我修养/Chapter5.md
+      - 第三部分 动态链接:
+        - Chapter6 可执行文件的装载与进程: 课外阅读/程序员的自我修养/Chapter6.md
         # - Chapter7 动态链接: 课外阅读/程序员的自我修养/Chapter7.md
         # - Chapter8 Linux共享库的组织: 课外阅读/程序员的自我修养/Chapter8.md
         # - Chapter9 Windows下的动态链接: 课外阅读/程序员的自我修养/Chapter9.md
